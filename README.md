@@ -1,1 +1,1 @@
-# Mini Thumbslider Project
+# Mini jQuery Thumbslider Project
