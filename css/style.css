@@ -21,3 +21,26 @@ a, a:visited {
   text-decoration: none;
   outline: none;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#slider {
+  -moz-box-shadow: 0 0 3px #aaa;
+  -webkit-box-shadow: 0 0 3px #aaa;
+  box-shadow: 0 0 3px #aaa;
+
+  -moz-border-radius:  5px;
+  -webkit-border-radius:  5px;
+  border-radius:  5px;
+
+  background:url(../img/panel.jpg) repeat-x bottom center #fff;
+  width: 900px;
+  overflow: hidden;
+}
