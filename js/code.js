@@ -52,4 +52,7 @@ $(document).ready(function(){
   }
 
   // Duration for auto scroll
+
+  var duration = 10;
+  var itvl = setInterval(function(){autoScroll()}, duration*1000);
 });
