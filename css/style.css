@@ -31,6 +31,13 @@ p {
   text-align: center;
 }
 
+.head{
+  background:url(../img/panel.jpg) repeat-x bottom center #fff;
+  height: 30px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
 #slider {
   -moz-box-shadow: 0 0 3px #aaa;
   -webkit-box-shadow: 0 0 3px #aaa;
@@ -43,4 +50,47 @@ p {
   background:url(../img/panel.jpg) repeat-x bottom center #fff;
   width: 900px;
   overflow: hidden;
+}
+
+#slides {
+  height: 200px;
+  width: 900px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.slide{
+  float:left !important;
+}
+
+.menu {
+  height: 45px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  width: 60px;
+  margin-left: -4px;
+  display: inline-block;
+  list-style: none;
+  height: 45px;
+  overflow: hidden;
+}
+
+li.active,li.active:hover{
+  background:url(../img/active_bg.png) no-repeat;
+}
+
+li.active {
+  cursor: default;
+}
+
+.sep {
+  width: 2px;
+  background:url(../img/sep.png) no-repeat right;
+  margin-right: -2px;
 }
