@@ -30,9 +30,26 @@ $(document).ready(function(){
     var pos = $(this).parent().prevAll('.product').length;
 
     // Initial animation
-    $('#slides').stop().animate(marginLeft:-positions[pos]+"px", 450);
+    $('#slides').stop().animate({marginLeft:-positions[pos]+"px"}, 450);
 
     // Prevent default
     e.preventDefault();
+
+    // Stop auto scroll
+    if(!autoScroll) clearInterval(itvl);
   });
+
+  // Make first image active
+  $('#menu ul li.product:first').addClass('active').siblings().addClass('inactive');
+
+  // Auto Scroll
+  var current = 1;
+  function autoScroll(){
+    if(current == 1) return false;
+
+    $('#menu ul li a').eq(current%$('#menu ul li a').length).trigger('click', [true]);
+    current++;
+  }
+
+  // Duration for auto scroll
 });
