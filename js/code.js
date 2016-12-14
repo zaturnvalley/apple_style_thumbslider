@@ -45,7 +45,7 @@ $(document).ready(function(){
   // Auto Scroll
   var current = 1;
   function autoScroll(){
-    if(current == 1) return false;
+    if(current == -1) return false;
 
     $('#menu ul li a').eq(current%$('#menu ul li a').length).trigger('click', [true]);
     current++;
