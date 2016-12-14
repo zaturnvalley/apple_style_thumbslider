@@ -24,5 +24,15 @@ $(document).ready(function(){
     // Remove active class and add inactive  class
     $('li.product').removeClass('active').addClass('inactive');
     // Add active class to parent
+    $(this).parent().addClass('active');
+
+    // Position variable
+    var pos = $(this).parent().prevAll('.product').length;
+
+    // Initial animation
+    $('#slides').stop().animate(marginLeft:-positions[pos]+"px", 450);
+
+    // Prevent default
+    e.preventDefault();
   });
 });
