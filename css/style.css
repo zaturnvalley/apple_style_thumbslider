@@ -31,7 +31,7 @@ p {
   text-align: center;
 }
 
-.head{
+header {
   background:url(../img/panel.jpg) repeat-x bottom center #fff;
   height: 30px;
   padding-top: 10px;
@@ -81,16 +81,27 @@ p {
   overflow: hidden;
 }
 
-li.active,li.active:hover{
+#menu li.active,li.active:hover{
   background:url(../img/active_bg.png) no-repeat;
 }
 
-li.active {
+#menu li.active {
   cursor: default;
 }
 
-.sep {
+#menu .sep {
   width: 2px;
-  background:url(../img/sep.png) no-repeat right;
+  background:url(../img/seperator.png) no-repeat right;
   margin-right: -2px;
+}
+
+#menu li a{
+  display: block;
+  background:url(../img/seperator.png) no-repeat right;
+  height: 35px;
+  padding-top: 12px;
+}
+
+a img {
+  border: none;
 }
